@@ -572,7 +572,7 @@ fun AboutTabScreen() {
         modifier = Modifier.fillMaxSize().padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(14.dp)
     ) {
-        Text("ℹ️ HAKKINDA / ABOUT MESHENGER WINDOWS", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 18.sp)
+        Text("ℹ️ HAKKINDA / ABOUT MESHENGER LINUX", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 18.sp)
         Text(
             "Meshenger, hücresel ağlar ve internet altyapısı çöktüğünde bile yerel Wi-Fi, Ethernet ve Bluetooth Mesh ağları üzerinden kesintisiz P2P haberleşme sağlayan şifreli ve sunucusuz bir acil durum platformudur.",
             color = Color(0xFFCBD5E1),
@@ -584,7 +584,20 @@ fun AboutTabScreen() {
                 Text("• ISO 22324 Uluslararası Akıllı Acil Durum Renk Paleti ve Sinyal Standardı", color = Color(0xFF94A3B8), fontSize = 12.sp)
                 Text("• Enkaz Dinleme & Ses Yükseltici (300Hz Yüksek Geçiren Filtre + 3x/5x/10x Kazanç Boost)", color = Color(0xFF94A3B8), fontSize = 12.sp)
                 Text("• Akustik Siren (3.5 kHz Akustik Düdük Tonu) ve Strobe SOS Flaş", color = Color(0xFF94A3B8), fontSize = 12.sp)
-                Text("• Android ve Windows Cihazlar Arasında Tam Uyumlu UDP Mesh Sinyalleşmesi", color = Color(0xFF94A3B8), fontSize = 12.sp)
+                Text("• Android, Windows ve Linux Cihazlar Arasında Tam Uyumlu UDP Mesh Sinyalleşmesi", color = Color(0xFF94A3B8), fontSize = 12.sp)
+            }
+        }
+
+        Card(colors = CardDefaults.cardColors(containerColor = Color(0xFF1E293B))) {
+            Column(modifier = Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                Text("❤️ YARARLANILAN PROJELER VE TEŞEKKÜRLER / REFERENCES & THANKS", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 14.sp)
+                Text("• Enkaz Dinleme Uygulaması (Gürültü filtreleme & ses yükseltme): https://github.com/mserman90/enkazdinlemeuygulamasi", color = Color(0xFF818CF8), fontSize = 12.sp)
+                Text("• Meshenger Android Projesi (P2P WebRTC haberleşme altyapısı): https://github.com/mserman90/meshenger-android", color = Color(0xFF818CF8), fontSize = 12.sp)
+                Text("• qaul.net (Şebekesiz Mesh İletişim Konsepti): https://github.com/mserman90/qaul.net", color = Color(0xFF818CF8), fontSize = 12.sp)
+                Text("• WebRTC Project (Gerçek zamanlı P2P medya akış motoru): https://webrtc.org", color = Color(0xFF818CF8), fontSize = 12.sp)
+                Text("• Libsodium / LazySodium (Kriptografik güvenlik & E2E şifreleme): https://libsodium.org", color = Color(0xFF818CF8), fontSize = 12.sp)
+                Text("• ISO 22324 Standartları (Acil durum yönetim renk rehberi): https://www.iso.org/standard/50060.html", color = Color(0xFF818CF8), fontSize = 12.sp)
+                Text("🙏 TEŞEKKÜR: Tüm arama-kurtarma ekiplerine, açık kaynak geliştiricilerine ve insanlık namına emek verenHerkese sonsuz teşekkürlerimizle.", color = Color(0xFF4ADE80), fontWeight = FontWeight.Bold, fontSize = 12.sp)
             }
         }
     }
