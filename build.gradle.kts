@@ -45,11 +45,11 @@ compose.desktop {
                 org.jetbrains.compose.desktop.application.dsl.TargetFormat.Rpm,
                 org.jetbrains.compose.desktop.application.dsl.TargetFormat.AppImage
             )
-            packageName = "meshenger-linux"
+            packageName = "MeshengerTR-Linux"
             packageVersion = "4.5.0"
-            description = "Meshenger P2P Emergency Network & Disaster Beacon for Linux (ISO 22324 Compliant)"
-            copyright = "© 2026 Meshenger Contributors. All rights reserved."
-            vendor = "Meshenger Contributors"
+            description = "MeshengerTR P2P Emergency Network & Disaster Beacon for Linux (ISO 22324 Compliant)"
+            copyright = "© 2026 MeshengerTR Contributors. All rights reserved."
+            vendor = "MeshengerTR Contributors"
             
             linux {
                 shortcut = true
